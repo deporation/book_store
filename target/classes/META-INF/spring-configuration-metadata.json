@@ -1,0 +1,12 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.druid",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.booksysteam.demo.util.MyBatisPlusConfig",
+      "sourceMethod": "public javax.sql.DataSource druidDataSource() "
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.booksysteam.demo.mapper.CarInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.booksysteam.demo.entity.CarInfo">
+        <result column="cid" property="cid" />
+        <result column="pri" property="pri" />
+        <result column="stat" property="stat" />
+        <result column="uid" property="uid" />
+        <result column="ISBN" property="isbn" />
+        <result column="bookname" property="bookname" />
+        <result column="ccount" property="ccount" />
+        <result column="cover" property="cover" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        cid,pri, stat, uid, ISBN, bookname, ccount, cover
+    </sql>
+
+</mapper>

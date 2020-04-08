@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.booksysteam.demo.mapper.BookMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.booksysteam.demo.entity.Book">
+        <id column="ISBN" property="isbn" />
+        <result column="bookname" property="bookname" />
+        <result column="autor" property="autor" />
+        <result column="transalter" property="transalter" />
+        <result column="press" property="press" />
+        <result column="editor" property="editor" />
+        <result column="publisher" property="publisher" />
+        <result column="edition" property="edition" />
+        <result column="pages" property="pages" />
+        <result column="price" property="price" />
+        <result column="bcount" property="bcount" />
+        <result column="btime" property="btime" />
+        <result column="detail" property="detail" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ISBN, bookname, autor, transalter, press, editor, publisher, edition, pages, price, bcount, btime, detail, cover
+    </sql>
+
+</mapper>
